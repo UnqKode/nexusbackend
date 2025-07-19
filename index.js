@@ -1,13 +1,12 @@
 // workers/priceWorker.js
 import "dotenv/config"; // Load environment variables from .env file
 import mongoose from "mongoose";
+import { Worker, Job } from "bullmq";
+import dbConnect from "./lib/dbConnect.js";
+import Price from "./lib/pageModel.js";
+import dotenv from "dotenv";
+
 dotenv.config();
-
-
-const { Worker, Job } = require("bullmq");
-const dbConnect = require("./lib/dbConnect");
-const Price = require("./model/price.model");
-const fetch = require("node-fetch");
 
 const QUEUE_NAME = "price-history-queue";
 const ALCHEMY_API_KEY = "kgv-WByysbnlxX39aMv9bvmFUNH1dUqb";
