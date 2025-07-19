@@ -1,0 +1,17 @@
+{
+  "name": "background",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bullmq": "^5.56.4",
+    "dotenv": "^17.2.0",
+    "mongoose": "^8.16.4"
+  }
+}
